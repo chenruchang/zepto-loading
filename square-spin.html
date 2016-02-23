@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>Zepto Loadings</title>
+
+    <link rel="stylesheet" href="css/square-spin.css">
+</head>
+<body>
+
+<div class="zepto-loading-wrap">
+    <div class="zepto-loading-block">
+        <div class="zepto-loading-content">
+            <div class="square-spin">
+                <div></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/zepto.min.js"></script>
+<script src="js/loading.js"></script>
+<script>
+    var loading = $('.zepto-loading-wrap').loading();
+    loading.show();
+
+    setTimeout(function () {
+        loading.hide();
+    }, 2000);
+</script>
+</body>
+</html>
